@@ -1,33 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic HTML Page</title>
-    <!-- Link to Tailwind CSS for utility-first styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom font for a clean, modern look */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonoran Ventures Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0d2f22;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0a251b;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #a8d5c2;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background: url('/path-to-your-map-image.png') center/cover no-repeat;
+      min-height: 80vh;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #fff;
+      background-color: rgba(13, 47, 34, 0.8);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section h3 {
+      font-size: 1.8rem;
+      color: #a8d5c2;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      color: #e1f2ed;
+    }
+
+    .cta {
+      background-color: #144d38;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      background-color: #a8d5c2;
+      color: #0d2f22;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #0a251b;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-    <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full text-center">
-        <!-- Main heading of the page -->
-        <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to My Basic Page!</h1>
+<body>
+  <header>
+    <h1>Sonoran Ventures Group</h1>
+    <p>Advisory Services for Desert Enterprises</p>
+  </header>
 
-        <!-- A paragraph of descriptive text -->
-        <p class="text-gray-600 leading-relaxed">
-            This is a simple HTML file created to demonstrate a basic web page structure.
-            It's responsive, uses Tailwind CSS for styling, and is ready for you to customize.
-        </p>
+  <div class="hero">
+    <h2>Guiding Visionaries Through the Sonoran Landscape</h2>
+  </div>
 
-        <!-- A small call to action or additional info -->
-        <p class="text-sm text-gray-500 mt-6">
-            Feel free to modify this content and explore more HTML and CSS!
-        </p>
-    </div>
+  <section class="section">
+    <h3>About Us</h3>
+    <p>
+      We provide tailored consultancy services for startups, investors, and organizations operating in or inspired by the Sonoran Desert. With a foundation in history, sustainability, and innovation, Sonoran Ventures Group connects heritage with modern opportunity.
+    </p>
+  </section>
+
+  <section class="section">
+    <h3>Our Services</h3>
+    <p>
+      Strategic Planning, Market Research, Eco-Innovation Consulting, Historical & Environmental Analysis, Local Partnership Building.
+    </p>
+  </section>
+
+  <div class="cta">
+    <h3>Let's Start Your Journey</h3>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Sonoran Ventures Group. All rights reserved.
+  </footer>
 </body>
 </html>
