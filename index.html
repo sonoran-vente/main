@@ -1,132 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sonoran Ventures Group</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background-color: #0d2f22;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #0a251b;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #a8d5c2;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 2rem;
-      background: url('/path-to-your-map-image.png') center/cover no-repeat;
-      min-height: 80vh;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      color: #fff;
-      background-color: rgba(13, 47, 34, 0.8);
-      padding: 1rem;
-      border-radius: 10px;
-    }
-
-    .section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .section h3 {
-      font-size: 1.8rem;
-      color: #a8d5c2;
-      margin-bottom: 1rem;
-    }
-
-    .section p {
-      color: #e1f2ed;
-    }
-
-    .cta {
-      background-color: #144d38;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .cta a {
-      display: inline-block;
-      background-color: #a8d5c2;
-      color: #0d2f22;
-      padding: 0.8rem 1.5rem;
-      border-radius: 5px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-
-    footer {
-      background-color: #0a251b;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonoran Ventures Group LLC - Real Estate Investing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/2C3E50/FFFFFF?text=Modern+Architecture');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Sonoran Ventures Group</h1>
-    <p>Advisory Services for Desert Enterprises</p>
-  </header>
+<body class="bg-gray-50 text-gray-800">
 
-  <div class="hero">
-    <h2>Guiding Visionaries Through the Sonoran Landscape</h2>
-  </div>
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">
+                Sonoran Ventures Group
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="#strategy" class="text-gray-600 hover:text-blue-600 transition duration-300">Our Strategy</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition duration-300">Portfolio</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+            <a href="#strategy" class="block py-2 text-gray-600 hover:text-blue-600">Our Strategy</a>
+            <a href="#portfolio" class="block py-2 text-gray-600 hover:text-blue-600">Portfolio</a>
+            <a href="#contact" class="block mt-2 w-full text-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Contact Us</a>
+        </div>
+    </header>
 
-  <section class="section">
-    <h3>About Us</h3>
-    <p>
-      We provide tailored consultancy services for startups, investors, and organizations operating in or inspired by the Sonoran Desert. With a foundation in history, sustainability, and innovation, Sonoran Ventures Group connects heritage with modern opportunity.
-    </p>
-  </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white h-[60vh] md:h-[80vh] flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight max-w-4xl mx-auto">Strategic Real Estate Investment in the Sun Corridor</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-200">Unlocking value and generating superior returns through expert market analysis and disciplined acquisition.</p>
+                <a href="#contact" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-lg">Partner With Us</a>
+            </div>
+        </section>
 
-  <section class="section">
-    <h3>Our Services</h3>
-    <p>
-      Strategic Planning, Market Research, Eco-Innovation Consulting, Historical & Environmental Analysis, Local Partnership Building.
-    </p>
-  </section>
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">About Sonoran Ventures Group</h2>
+                        <p class="text-gray-600 mb-4">
+                            Sonoran Ventures Group LLC is a premier real estate investment firm specializing in identifying and capitalizing on high-potential properties across Arizona. Our foundation is built on integrity, deep market knowledge, and a commitment to our partners' success.
+                        </p>
+                        <p class="text-gray-600">
+                            We leverage a data-driven approach to navigate the complexities of the real estate market, ensuring every investment is positioned for optimal growth and profitability. From residential flips to long-term commercial holds, our strategy is tailored to maximize value and mitigate risk.
+                        </p>
+                        <div class="mt-8 flex space-x-4">
+                            <div class="flex items-center text-gray-700">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                <span>Expert Market Analysis</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                <span>Proven Track Record</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=Our+Team" alt="Sonoran Ventures Group Team" class="rounded-lg shadow-xl w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="cta">
-    <h3>Let's Start Your Journey</h3>
-    <a href="#">Contact Us</a>
-  </div>
+        <!-- Investment Strategy Section -->
+        <section id="strategy" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Our Investment Strategy</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">We focus on a diversified set of real estate opportunities to build a robust and resilient portfolio.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Strategy Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-blue-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="home" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Residential Properties</h3>
+                        <p class="text-gray-600">Targeting undervalued single-family and multi-family homes in growing neighborhoods for renovation and resale or long-term rental income.</p>
+                    </div>
+                    <!-- Strategy Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-blue-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="building-2" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Commercial Real Estate</h3>
+                        <p class="text-gray-600">Acquiring strategically located commercial assets, including retail, office, and industrial spaces, with strong tenant potential and value-add opportunities.</p>
+                    </div>
+                    <!-- Strategy Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-blue-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="mountain" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Land Acquisition</h3>
+                        <p class="text-gray-600">Identifying and securing prime parcels of land in the path of development, positioning our partners to benefit from future growth and rezoning opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    &copy; 2025 Sonoran Ventures Group. All rights reserved.
-  </footer>
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Get In Touch</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Ready to explore investment opportunities? Contact us today to start the conversation.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
+                   <div class="grid md:grid-cols-2 gap-12">
+                       <div>
+                            <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <i data-lucide="phone" class="w-6 h-6 text-blue-600 mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold">Phone</h4>
+                                        <a href="tel:9283640928" class="text-gray-600 hover:text-blue-600">928-364-0928</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i data-lucide="mail" class="w-6 h-6 text-blue-600 mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold">Email</h4>
+                                        <a href="mailto:info@sonoranventuresgroup.com" class="text-gray-600 hover:text-blue-600">info@sonoranventuresgroup.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i data-lucide="map-pin" class="w-6 h-6 text-blue-600 mt-1"></i>
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold">Location</h4>
+                                        <p class="text-gray-600">Serving the greater Arizona area.</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                       <div>
+                           <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                           <form action="#" method="POST">
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300">Submit Inquiry</button>
+                           </form>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold mb-2">Sonoran Ventures Group LLC</p>
+            <p class="text-gray-400 mb-6">Your Partner in Arizona Real Estate Investment</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="mailto:info@sonoranventuresgroup.com" class="text-gray-400 hover:text-white">info@sonoranventuresgroup.com</a>
+                <span class="text-gray-500">|</span>
+                <a href="tel:9283640928" class="text-gray-400 hover:text-white">928-364-0928</a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; <span id="copyright-year"></span> Sonoran Ventures Group LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+        
+        // Dynamic Copyright Year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
+
